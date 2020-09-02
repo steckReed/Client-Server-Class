@@ -14,7 +14,7 @@ body {
 .image-container-left,
 .image-container-right {
   position: absolute;
-  height: 450px;
+  height: 400px;
   /* width: 52%; */
   width: 66%;
   transition: all 0.9s;
@@ -23,22 +23,28 @@ body {
   left: 0;
   top: 0;
   /* background-color: orange; */
-  background-image: url("../Images/Guru-1-Andrea.png");
-  /* -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); */
+  background-size: contain;
   clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-  /* clip-path: polygon(0 0, 100% 0%, 650px 100%, 0 100%); */
 }
 .image-container-right {
   right: 0;
   top: 0;
   /* background-color: green; */
-  background-image: url("../Images/Guru-2-Jayson.png");
-  /* -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); */
+  background-size: contain;
   clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-  /* clip-path: polygon(75px 0, 100% 0%, 100% 100%, 0% 100%); */
 }
 .image-container-left:hover,
 .image-container-right:hover {
   transform: scale(1.09);
   cursor: pointer;
+}
+.guru-img{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }

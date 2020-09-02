@@ -6,12 +6,16 @@
 ?>
 
 <div class="parent">
-  <div class="image-container-left"></div>
-  <div class="image-container-right"></div>
+  <div class="image-container-left">
+  <img class='guru-img' src='./View/Public/Images/Guru-1-Andrea.png'>
+  </div>
+  <div class="image-container-right">
+    <img class='guru-img' src='./View/Public/Images/Guru-2-Jayson.png'>
+  </div>
 </div>
 
 
 
 <?php
     include './View/footer.php';
-?>
+?> 
