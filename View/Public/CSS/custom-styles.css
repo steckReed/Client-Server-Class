@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
+}
+html,
+body {
+  height: auto;
+  background-color: #5d6d7e;
+}
+.parent {
+  position: relative;
+  width: 100%;
+}
+.image-container-left,
+.image-container-right {
+  position: absolute;
+  height: 450px;
+  /* width: 52%; */
+  width: 66%;
+  transition: all 0.9s;
+}
+.image-container-left {
+  left: 0;
+  top: 0;
+  /* background-color: orange; */
+  background-image: url("../Images/Guru-1-Andrea.png");
+  /* -webkit-clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0%, 650px 100%, 0 100%); */
+}
+.image-container-right {
+  right: 0;
+  top: 0;
+  /* background-color: green; */
+  background-image: url("../Images/Guru-2-Jayson.png");
+  /* -webkit-clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%); */
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(75px 0, 100% 0%, 100% 100%, 0% 100%); */
+}
+.image-container-left:hover,
+.image-container-right:hover {
+  transform: scale(1.09);
+  cursor: pointer;
+}
