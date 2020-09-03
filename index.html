@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta Tags -->
+  <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- /Meta Tags -->
+    <!-- /Meta Tags -->
 
-  <!-- Links -->
-        <link rel='stylesheet' href="./View/Public/CSS/custom-styles.css">
-  <!-- /Links -->
-  <title>Gamer Goop</title>
-</head>
-<body>
+    <!-- Links -->
+    <link rel="stylesheet" href="./View/Public/CSS/custom-styles.css" />
+    <!-- /Links -->
+    <title>Gamer Goop</title>
+  </head>
 
+  <body>
+    <div class="page-grid">
+      <div class="navbar"></div>
 
-<div class="parent">
-  <div class="image-container-left">
-  <img class='guru-img' src='./View/Public/Images/Guru-1-Andrea.png'>
-  </div>
-  <div class="image-container-right">
-    <img class='guru-img' src='./View/Public/Images/Guru-2-Jayson.png'>
-  </div>
-</div>
-
-
-
-</body>
+      <div class="guru-image-container">
+        <div class="image-container-left">
+          <img
+            class="guru-img-left"
+            src="./View/Public/Images/Guru-Andrea.png"
+          />
+          <div class="overlay-left">
+            <div class="text-left">Meet Andrea</div>
+          </div>
+        </div>
+        <div class="image-container-right">
+          <img
+            class="guru-img-right"
+            src="./View/Public/Images/Guru-Jayson.png"
+          />
+          <div class="overlay-right">
+            <div class="text-right">Meet Jayson</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
