@@ -6,20 +6,24 @@ html,
 body {
   height: auto;
   background-color: #333f4d;
-  height: 2500px;
   margin: 0;
   padding: 0;
+}
+body {
   overflow-x: hidden;
 }
 .page-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 135px 500px 500px 500px;
+  grid-template-rows: auto 570px auto auto;
 }
 .navbar {
   grid-row: 1;
-  width: 100%;
   background: rgb(122, 21, 143);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
   background: -moz-linear-gradient(
     -90deg,
     rgba(122, 21, 143, 1) 15%,
@@ -41,6 +45,7 @@ body {
   color: white;
   font-size: 52px;
   text-align: center;
+  transition: 0.4s;
 }
 .guru-image-container {
   grid-row: 2;
@@ -81,12 +86,14 @@ body {
   object-fit: cover;
   margin-left: 50%;
   margin-top: 40%;
+  /* animation: 2s ease-out 0s 1 slideInFromLeft; */
 }
 
 .guru-img-right {
   position: absolute;
   left: 50%;
   top: 80%;
+  /* animation: 2s ease-out 0s 1 slideInFromRight; */
 }
 
 .overlay-left,
@@ -134,25 +141,136 @@ body {
   transform: translate(-50%, -50%);
   white-space: nowrap;
   text-align: center;
+  border-bottom: 1px solid rgb(155, 155, 155);
 }
 .text-left {
-  top: 75%;
-  left: 23%;
+  top: 60%;
+  left: 28%;
 }
-.text-right {
-  top: 42%;
-  left: 72%;
+.overlay-left-btn-grid {
+  margin-left: 65%;
+  margin-top: 325px;
+  width: 500px;
 }
-.overlay-right button {
+.overlay-left button {
   position: absolute;
-  background-color: rgb(122, 21, 143);
-  font-size: 18px;
+  background-color: rgb(20, 67, 221);
+  font-size: 1.3vw;
   font-weight: 500;
   color: white;
   padding: 13px;
   border: none;
   border-radius: 3px;
-  top: 54%;
-  left: 72%;
+  /* top: 54%;
+  left: 72%; */
   cursor: pointer;
+  white-space: nowrap;
+  left: 30%;
+}
+.overlay-left button:nth-child(2) {
+    left: 7%;
+}
+.overlay-left button:hover{
+  background-color:rgb(35, 66, 168);
+  transition-duration: 0.7s;
+}
+.text-right {
+  top: 42%;
+  left: 72%;
+}
+.overlay-right-btn-grid {
+  margin-left: 65%;
+  margin-top: 250px;
+  width: 500px;
+}
+.overlay-right button {
+  position: absolute;
+  background-color: rgb(122, 21, 143);
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: white;
+  padding: 13px;
+  border: none;
+  border-radius: 3px;
+  /* top: 54%;
+  left: 72%; */
+  cursor: pointer;
+  white-space: nowrap;
+  right: 10%;
+}
+.overlay-right button:nth-child(2) {
+  /* left: 52%; */
+  right: 29%;
+}
+.overlay-right button:hover{
+  background-color: rgb(96, 24, 110);
+  transition-duration: 0.7s;
+}
+
+.welcome-message-container{
+  grid-column: 1;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-rows: auto;
+}
+.welcome-message-grid{
+  grid-column: 2;
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 65% 25% auto;
+  grid-template-rows: repeat(auto-fill, minmax(0, auto));;
+  background-color: #e2e9f1;
+  -webkit-box-shadow: 9px 10px 5px -4px rgba(0,0,0,0.64);
+  -moz-box-shadow: 9px 10px 5px -4px rgba(0,0,0,0.64);
+  box-shadow: 9px 10px 5px -4px rgba(0,0,0,0.64);
+  border-radius: 4px;
+  padding: 15px;
+}
+.welcome-message-grid > h1 {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  font-size: 42px;
+  text-align: center;
+}
+.welcome-message-grid > img {
+  grid-column: 2;
+  grid-row: 2;
+  height: 12px;
+}
+.welcome-message-grid > p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 18px;
+  margin: 0; 
+  padding: 0;
+}
+
+
+
+
+
+
+
+.animation-slide-left{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.animation-slide-right{
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
