@@ -444,6 +444,20 @@ a{
 
 /* -------------------------------------TOP TEN------------------------------------- */
 
+
+.game-of-the-week-grid{
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  height: 500px;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 15px;
+  background-color: aquamarine;
+}
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
