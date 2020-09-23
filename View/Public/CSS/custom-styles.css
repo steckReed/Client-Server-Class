@@ -411,7 +411,7 @@ a{
   grid-row: 1;
   font-size: 72px;
   font-weight: 700;
-  margin-top: 0;
+  margin-top: 0; 
   text-align: center;
   color: #e2e9f1;
 }
@@ -449,13 +449,29 @@ a{
   grid-column: 1;
   grid-row: 3;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  height: 500px;
+  grid-template-columns: 15% 1fr 1.5fr 15%;
+  grid-template-rows: 150px auto;
   margin-left: 8%;
   margin-right: 8%;
   padding: 15px;
-  background-color: aquamarine;
+  padding-bottom: 100px;
+  background-color: #e2e9f1;
+}
+.game-of-the-week-grid > img{
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+  margin-top: -45px;
+  width: 375px;
+  transition: all .4s ease-in-out;
+}
+.game-of-the-week-grid > img:hover{
+  transform: scale(1.05);
+}
+.game-of-the-week-desc{
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 23px;
 }
 
 @keyframes slideInFromLeft {
