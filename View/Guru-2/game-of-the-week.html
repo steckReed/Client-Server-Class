@@ -1,9 +1,73 @@
-<div style="text-align: center">
-  <h1 style="font-size: 94px">normal cuck</h1>
-  <h1>Gamer Guru 2</h1>
-  <h2>
-    Gooper Drown
-    <br />
-    Drownin' in the cummies
-  </h2>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- /Meta Tags -->
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../Public/CSS/custom-styles.css" />
+  <!-- /Links -->
+
+  <title>Game Gurus</title>
+</head>
+
+<body>
+  <div class="page-grid">
+    <div class="navbar">
+      <a class='navbar-btn-1' href='../../index.html'>
+        Home
+      </a>
+      <a class='navbar-btn-2' href='./top-ten.html'>
+        My Top 10 Games
+      </a>
+      <h1 id='navbar'>The Game Gurus</h1>
+    </div>
+
+    <img class='img-banner border-shadow' src="../Public/Images/Guru-Jayson.png" />
+
+    <div class='game-of-the-week-grid border-shadow'>
+      <div class='welcome-message-header'>
+        <div class="slanted-banner" style='font-size:62px;'>Game of the Week: <span>Minecraft</span></div>
+      </div>
+      <img class='border-shadow' src='../Public/Images/Guru-2-Imgs/minecraft.png'>
+      <div class='game-of-the-week-desc'>
+        <h1>Minecraft</h1>
+        The ability to create anything you want combined with the vast amount of resources provided
+        allows any person, young and old, to step foot in a game of endless possibilities.
+        From building, mining, crafting, farming to destroying towns and killing mobs with, or without friends,
+        Minecraft in my opinion is forever a timeless classic thats easy to pick up, and even harder to put down.
+        <br><br>
+        This is an absolute must have game and the reason that this beauty is my game of the week!
+        <br><br>
+        Signing off,
+        <br>
+        Guru Jayson
+      </div>
+    </div>
+
+    <div class='footer'>
+    </div>
+
+  </div>
+
+  <script>
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      // For Navbar
+      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+        document.getElementById("navbar").style.fontSize = "36px";
+      } else {
+        document.getElementById("navbar").style.fontSize = "52px";
+      }
+      // For Navbar
+    }
+  </script>
+
+</body>
+
+</html>

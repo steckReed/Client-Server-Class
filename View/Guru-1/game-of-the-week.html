@@ -1,4 +1,77 @@
-<div style="text-align: center">
-  <h1>Gamer Guru 1 - The Cum Dumpster</h1>
-  <h2>The Goopiest Games</h2>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- /Meta Tags -->
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../Public/CSS/custom-styles.css" />
+  <!-- /Links -->
+
+  <title>Game Gurus</title>
+</head>
+
+<body>
+  <div class="page-grid">
+    <div class="navbar">
+      <a class='navbar-btn-1' href='../../index.html'>
+        Home
+      </a>
+      <a class='navbar-btn-2' href='./top-ten.html'>
+        My Top 10 Games
+      </a>
+      <h1 id='navbar'>The Game Gurus</h1>
+    </div>
+
+    <img class='img-banner border-shadow' src="../Public/Images/Guru-Andrea.png" />
+
+    <div class='game-of-the-week-grid border-shadow'>
+      <div class='welcome-message-header'>
+        <div class="slanted-banner" style='font-size:62px;'>Game of the Week: <span>Adventure</span></div>
+      </div>
+      <img class='border-shadow' src='../Public/Images/Guru-1-Imgs/adventure.jpg'>
+      <div class='game-of-the-week-desc'>
+        <h1>Adventure</h1>
+        This absolute classic game is showing up on our "Game of the Week" to remind us where games all
+        came from and where they're going; that and I've been playing this again recently
+        (streaming from 7pm-11pm every Tuesday and Thursday). Between this being the one of the very first open roam
+        worlds
+        to being the actual first game to ever have an easter egg, the creators name in a secret room, you can
+        easily suck you in for hours of great gameplay!
+        <br><br>
+        While the graphics might not be appealing at first, this is a game you just have to pick up to truly
+        understand.
+        <br><br>
+        I'll see you all this next stream!
+        <br>
+        Guru Andrea
+      </div>
+    </div>
+
+
+    <div class='footer'>
+    </div>
+
+  </div>
+
+  <script>
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      // For Navbar
+      if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+        document.getElementById("navbar").style.fontSize = "36px";
+      } else {
+        document.getElementById("navbar").style.fontSize = "52px";
+      }
+      // For Navbar
+    }
+  </script>
+
+</body>
+
+</html>

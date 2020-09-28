@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- /Meta Tags -->
+
+    <!-- Links -->
+    <link rel="stylesheet" href="../Public/CSS/custom-styles.css" />
+    <!-- /Links -->
+
+    <title>Game Gurus</title>
+</head>
+
+<body>
+    <div class="page-grid">
+        <div class="navbar">
+            <a class='navbar-btn-1' href='../../index.html'>
+                Home
+            </a>
+            <a class='navbar-btn-2' href='./game-of-the-week.html'>
+                My Game of the Week
+            </a>
+            <h1 id='navbar'>The Game Gurus</h1>
+        </div>
+
+        <img class='img-banner' src="../Public/Images/Guru-Jayson.png" />
+
+
+        <div class='top-ten-grid'>
+
+            <h1 class='top-ten-header-text'>My Top 10 Classics</h1>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/minecraft.png'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    Minecraft
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/fortnite.png'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    Fortnite
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/the-legend-of-zelda-botw.jpg'>
+                </div>
+                <div class='top-ten-item-desc' style='font-size:36px'>
+                    The Legend of Zelda: Breath of the Wild
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/gta-5.png'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    GTA 5
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/dota-2.png'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    DOTA 2
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/league-of-legends.jpg'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    League of Legends
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/overwatch.jpg'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    Overwatch
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/witcher-3.jpg'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    The Witcher Wild Hunt
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/doom-eternal.png'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    Doom Eternal
+                </div>
+            </div>
+            <div class='top-ten-item border-shadow'>
+                <div class='top-ten-item-image'>
+                    <img src='../Public/Images/guru-2-Imgs/dark-souls.jpg'>
+                </div>
+                <div class='top-ten-item-desc'>
+                    Dark Souls
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class='footer'>
+        </div>
+
+    </div>
+
+    <script>
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            // For Navbar
+            if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+                document.getElementById("navbar").style.fontSize = "36px";
+            } else {
+                document.getElementById("navbar").style.fontSize = "52px";
+            }
+            // For Navbar
+        }
+    </script>
+
+</body>
+
+</html>

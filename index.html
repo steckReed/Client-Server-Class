@@ -1,29 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Meta Tags -->
+  <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- /Meta Tags -->
+    <!-- /Meta Tags -->
 
-  <!-- Links -->
-        <link rel='stylesheet' href="./View/Public/CSS/custom-styles.css">
-  <!-- /Links -->
-  <title>Gamer Goop</title>
-</head>
-<body>
+    <!-- Links -->
+    <link rel="stylesheet" href="./View/Public/CSS/custom-styles.css" />
+    <!-- /Links -->
 
+    <title>Game Gurus</title>
+  </head>
 
-<div class="parent">
-  <div class="image-container-left">
-  <img class='guru-img' src='./View/Public/Images/Guru-1-Andrea.png'>
-  </div>
-  <div class="image-container-right">
-    <img class='guru-img' src='./View/Public/Images/Guru-2-Jayson.png'>
-  </div>
-</div>
+  <body>
+    <div class="page-grid">
+      <div class="navbar">
+        <h1 id="navbar">The Game Gurus</h1>
+      </div>
 
+      <div class="guru-image-container">
+        <div class="image-container-left">
+          <img
+            class="guru-img-left"
+            src="./View/Public/Images/Guru-Andrea.png"
+          />
+          <div class="overlay-left">
+            <div class="text-left">Andrea<br />Our Classics Guru</div>
+            <div class="overlay-left-btn-grid">
+              <a href="./View/Guru-1/top-ten.html"> Top 10 Games </a>
+              <a href="./View/Guru-1/game-of-the-week.html">
+                Game of the Week
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <div class="image-container-right">
+          <img
+            class="guru-img-right"
+            src="./View/Public/Images/Guru-Jayson.png"
+          />
+          <div class="overlay-right">
+            <div class="text-right">Jayson<br />Our Esports Guru</div>
+            <div class="overlay-right-btn-grid">
+              <a href="./View/Guru-2/top-ten.html"> Top 10 Games </a>
+              <a href="./View/Guru-2/game-of-the-week.html">
+                Game of the Week
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-</body>
+      <div class="welcome-message-container">
+        <div
+          class="welcome-message-grid border-shadow"
+          id="welcome-message-grid"
+        >
+          <div class="welcome-message-header">
+            <div class="slanted-banner">
+              Game Reviews: <span>Simply Done Right</span>
+            </div>
+          </div>
+
+          <p>
+            <span class="para-first-letter">W</span>e're so glad that you're
+            here! Feel free to explore our site and checkout our Game Guru's
+            reviews! We have reviews for everyone young and old. From the
+            Nintendo classics to the newest and hottest games of
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            .
+          </p>
+          <div class="welcome-message-quotes">
+            <p>
+              "Here, we have a passion for playing and breaking down games from
+              every angle."<br />
+              - Jayson
+            </p>
+            <br />
+            <p>
+              "After playing on the NES, I fell in love with all of the
+              classics."<br />
+              - Andrea
+            </p>
+          </div>
+
+          <div class="sidebar-container">
+            <div class="sidebar border-shadow">
+              <h2 class="sidebar-header-text">Our Quick Links</h2>
+              <p>Andrea:</p>
+              <a href="./View/Guru-1/top-ten.html">
+                <button>Top 10 Games</button>
+              </a>
+              <a href="./View/Guru-1/game-of-the-week.html">
+                <button>Game of the Week</button><br />
+              </a>
+
+              <p>Jayson:</p>
+              <a href="./View/Guru-2/top-ten.html">
+                <button>Top 10 Games</button>
+              </a>
+              <a href="./View/Guru-2/game-of-the-week.html">
+                <button>Game of the Week</button><br /> </a
+              ><br />
+              <a href="https://www.youtube.com/">
+                <button style="background-color: #e62117">YouTube</button>
+              </a>
+              <a href="https://www.twitch.com/">
+                <button style="background-color: #9146ff">Twitch</button><br />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        // For Navbar
+        if (
+          document.body.scrollTop > 180 ||
+          document.documentElement.scrollTop > 180
+        ) {
+          document.getElementById("navbar").style.fontSize = "36px";
+        } else {
+          document.getElementById("navbar").style.fontSize = "52px";
+        }
+        // For Navbar
+      }
+    </script>
+  </body>
 </html>
