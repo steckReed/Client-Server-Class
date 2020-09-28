@@ -1,50 +1,21 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; */
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
+
 html,
 body {
   height: auto;
-  background-color: #5d6d7e;
+  background-color: rebeccapurple;
 }
-.parent {
-  position: relative;
-  width: 100%;
+
+.page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
 }
-.image-container-left,
-.image-container-right {
-  position: absolute;
-  height: 400px;
-  /* width: 52%; */
-  width: 66%;
-  transition: all 0.9s;
-}
-.image-container-left {
-  left: 0;
-  top: 0;
-  /* background-color: orange; */
-  background-size: contain;
-  clip-path: polygon(0 0, 100% 0%, 50% 100%, 0% 100%);
-}
-.image-container-right {
-  right: 0;
-  top: 0;
-  /* background-color: green; */
-  background-size: contain;
-  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 0% 100%);
-}
-.image-container-left:hover,
-.image-container-right:hover {
-  transform: scale(1.09);
-  cursor: pointer;
-}
-.guru-img{
-  position: absolute;
-  height: auto;
-  width: 100%;
-  left: 50%;
-  top: 100%;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
+/*# sourceMappingURL=custom-styles.css.map */
