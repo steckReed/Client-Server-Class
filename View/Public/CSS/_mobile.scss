@@ -1,0 +1,6 @@
+@media only screen and (max-width: 950px) {
+  .page-grid {
+    --grid-min-size: 19rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-min-size), 1fr));
+  }
+}

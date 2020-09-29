@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -8,14 +8,27 @@ html,
 body {
   height: auto;
   background-color: rebeccapurple;
+  margin: 0;
 }
 
 .page-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
-  -ms-grid-rows: auto auto auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
+}
+
+.div1 {
+  background-color: teal;
+}
+
+@media only screen and (max-width: 950px) {
+  .page-grid {
+    --grid-min-size: 19rem;
+    -ms-grid-columns: (minmax(var(--grid-min-size), 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(var(--grid-min-size), 1fr));
+  }
 }
 /*# sourceMappingURL=custom-styles.css.map */
