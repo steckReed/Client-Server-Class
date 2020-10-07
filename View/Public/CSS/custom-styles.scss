@@ -16,18 +16,19 @@ $color-secondary-dark: #0f3057;
 
 .page-grid {
   display: grid;
-  grid-template-columns: minmax(350px, auto) 2fr 1fr;
+  grid-template-columns: 250px 2fr 1fr;
   grid-template-rows: repeat(auto-fill, minmax(0, auto));
   padding: 8px;
   padding-top: 25px;
 }
 .navbar-grid {
   grid-column: 1;
-  grid-row: 1/-1;
+  grid-row: 1/4;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100%;
   padding-top: 100px;
+  z-index: 3;
 }
 .navbar {
   height: 500px;
@@ -39,23 +40,18 @@ $color-secondary-dark: #0f3057;
   color: $color-background;
   text-align: center;
 }
-.center-content-container {
-  grid-column: 2;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(auto-fill, minmax(0, auto));
-  padding: 40px 30px 40px 30px;
-}
-.center-content-grid {
-  display: grid;
-  grid-template-columns: minmax(300px, auto);
-  grid-template-rows: repeat(auto-fit, auto);
-  padding-left: 5%;
-}
 
+.navbar > a {
+  background-color: #0f3057;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  height: 25px;
+  margin-bottom: 100px;
+  color: #f0f0f0;
+}
 .center-content {
-  grid-column: 1;
+  grid-column: 2;
   display: grid;
   height: auto;
   width: auto;
@@ -69,6 +65,7 @@ $color-secondary-dark: #0f3057;
   color: white;
   margin-bottom: 25px;
   padding: 10px;
+  margin: 40px 15px 40px 15px;
 }
 .center-content h1 {
   text-align: center;
@@ -78,5 +75,37 @@ $color-secondary-dark: #0f3057;
 }
 .center-content p {
   font-size: 18px;
+}
+
+.trip-info-grid-1,
+.trip-info-grid-2,
+.trip-info-grid-3 {
+  grid-column: 3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100%;
+  margin-bottom: 15px;
+}
+
+.trip-info-grid-1 {
+  grid-row: 1;
+}
+.trip-info-grid-2 {
+  grid-row: 2;
+}
+.trip-info-grid-3 {
+  grid-row: 3;
+}
+
+.trip-info-text {
+  height: 350px;
+  width: auto;
+  background-color: $color-secondary;
+  position: sticky;
+  top: 100px;
+  border-radius: 4px;
+  color: $color-background;
+  text-align: center;
+  padding: 10px;
 }
 @import "./mobile";
